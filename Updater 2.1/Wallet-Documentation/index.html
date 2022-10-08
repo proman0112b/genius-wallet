@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GeniusWallet Updater</title>
+    <!--favicon icon-->
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Thanks for purchasing Corpoint. If you need any support, please contact with us.">
+    <meta name="author" content="UX-Theme">
+    <meta name="copyright" content="UX-Theme">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.fonts.css">
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+
+        <!--right side-->
+        <div class="right-side">
+            <div class="right-content">
+                
+                <!--id introduction-->
+                <div id="introduction" class="common_section">
+                    <h1 class="bit_title">GeniusWallet Updater</h1>
+                    <div class="content-welcome">
+                        <p><strong>Created on:  </strong> June, 2022</p>
+                        <p><strong>By: </strong> <a href="">GeniusOcean</a></p>
+                        <p><strong>Email: </strong> badruddoza.me@gmail.com</p>
+                    </div>
+                </div>
+
+
+
+                <!--id cron-->
+                <div id="cron" class="common_section installation">
+                    <div class="content-welcome">
+                    <p> <b>Step 1:</b> Upload the GeniusWallet-updater-v2.1.zip file in your root folder.</p>
+                    <img src="./images/upload.png" alt="banner">
+                    <p> <b>Step 2:</b> Extract GeniusWallet-updater-v2.1.zip  file in your root folder.</p>
+                    <img src="./images/extract.png" alt="banner">                        
+                    <p>Make sure you have these folders and files after extraction. Marked as blue in the picture below.</p>
+                    <img src="./images/marked.png" alt="banner">
+                    <p> <b>Step 3:</b> Now enter to this url: yourWebSiteUrl.com/updater and you'll get this page.</p>
+                    <img src="./images/updater.png" alt="banner">
+                    <p>Make sure you have <b>backup-index.zip</b> and <b>backup-project.zip </b> file in your root folder, otherwise you won't be able to update it.</p>
+                    <img src="./images/updater-error.png" alt="banner">
+                    <p><b>Step 4:</b> Click on the Update now button and wait until the update is complete.</p>
+                    <p>If you find any design or script issue, then clear your browser cache or just simply press <b>Ctrl+Shift+R</b>.</p>
+                    </div>
+                </div>
+
+
+
+                <!--id Developer support-->
+                <div id="support" class="common_section">
+                    <h1 class="bit_title">Developer Support</h1>
+                    <div class="content-welcome">
+                        <p>
+                            We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible. We reply all our emails within 36 hours. Please email us from our profile so we can verify you as our client and help you to solve any issue. <br>
+                            Our profile: <a href="https://codecanyon.net/user/geniusocean">https://codecanyon.net/user/geniusocean</a>
+                            <br/>
+                            Thank you,
+                            <br/>
+                            <Strong>GeniusOcean</Strong>
+                            <br/>
+                            Or
+                            <br/>
+                            <a href="" class="btn boxed-btn">Contact Us</a> 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(".anchor").on("click", function(event) {
+            var target = $($(this).attr("href"));
+
+            if (target.length) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: target.offset().top - 0 + 'px'
+                }, 1000);
+            }
+        });
+
+        $(".left-content>ul>li").on("click", function() {
+            $(this).children(".dropdown").slideToggle();
+            $(this).siblings("li").children(".dropdown").slideUp();
+        });
+        $(".left-content .dropdown li ").on("click", function(e) {
+            e.stopPropagation();
+        });
+
+    </script>
+</body>
+
+</html>
